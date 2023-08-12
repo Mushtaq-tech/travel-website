@@ -1,0 +1,463 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.7;
+}
+html{
+    font-size: 62.5%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+/* 
+UTILITY CLASSES */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.bg-dark{
+    background-color: #263238;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: #fff;
+}
+.btn-primary:hover{
+    background: #ddd;
+}
+.btn-secondary:hover{
+    background: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER CLASSES */
+.header{
+    position: relative;
+    height: 95vh;
+    background:  url(../img/header-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.logo{
+    background: url("../img/th.jpg") no-repeat scroll center;
+    width: 200px;
+    height: 140px;
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 5rem;
+    text-transform: uppercase;
+
+} 
+
+
+/* HEADER CONTENT STYLING */
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+   background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p{
+    text-transform: uppercase;
+}
+
+/* SHOWCASE SECTION STYLING */
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px #00000050;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box,.row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 
+FEATURES STYLING */
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px #00000080;
+}
+.features{
+    padding: 10rem 0;
+}
+.box{
+    width: 33.33%;
+    float:left;
+    padding: 2rem;
+    text-align: center;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box1,.box3{
+    background-color: #263238;
+    color: white;
+}
+.box2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: white;
+}
+
+/* FOOTER STYLING */
+.footer{
+   
+    text-align: center;
+    padding: 2rem;
+    background: #263238;
+    color: white;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.social-media-links i{
+    margin: 2rem;
+}
+
+/* ABOUT PAGE STYLING */
+.about{
+    padding: 5rem 0;
+}
+/* .about-heading{
+    border-bottom: 5px solid #e63946;
+} */
+/* we can use any of the methods  */
+.about-heading::after{
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+/* ABOUT WRAPPER STYLING */
+.list{
+    list-style: none;
+
+}
+ .about-wrapper li:before {
+    content: '✓'; 
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* COUNT STYLING */
+.count-item{
+    float: left;
+   width: 25%;
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   margin-top: 1em;
+   padding: 2rem;
+}
+.counts::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+
+/* BANNER STYLING */
+
+.cta-banner{
+    background:linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: white;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #00000057;
+    margin-top: 3rem;
+}
+.cta-banner-left{
+    float: left;
+    width: 60%;
+}
+.cta-banner-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.4rem;
+}
+.btn-cta{
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3rem 2.5rem;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+}
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* contact page styling */
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+    
+    
+}
+
+.form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .company-address{
+    height: 760px;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+}
+.form{
+    width: 49%;
+    float: right;
+}
+.form-wrapper .company-address i{
+    display: inline;
+    margin-right: 1rem;
+}
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-width: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+.form-wrapper .company-address h2{
+    display: inline;
+    text-transform: uppercase;
+}
+
+/* FORM STYLING */
+.form-wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    background: #fff;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+.form-wrapper .form label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: '* ';
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #ddd;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+@media(max-width:500px){
+    html{
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+    .navbar .nav-items,.navbar .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
